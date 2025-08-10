@@ -1,0 +1,32 @@
+:root {
+
+    /* font-family */
+    --ff-golos: "Golos Text", sans-serif;
+    --ff-merriweather: "Merriweather", serif;
+
+    /* color */
+    --color-accent: #BF5DFF;
+    --color-dark: #000;
+    --color-light: #fff;
+
+}
+
+body {
+    font-family: var(--ff-golos);
+}
+
+.container {
+    width: 100%;
+    max-width: 1252px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: var(--ff-merriweather);
+    color: #313131;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
