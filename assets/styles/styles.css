@@ -1,0 +1,128 @@
+/* ------------------- Header styles start ------------------- */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 26px 0;
+}
+
+.header-logotype {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-logotype__image {
+    max-width: 92px;
+}
+
+.header-logotype__title {
+    font-family: var(--ff-golos);
+    color: #595653;
+    font-size: 1.6rem;
+    line-height: 108%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* ------------------- Header styles end ------------------- */
+
+/* ------------------- Hero styles start ------------------- */
+.hero {
+    padding: 110px 0 132px 0;
+    background: url('../images/hero/hero-background.jpg') no-repeat center center / cover;
+}
+
+.hero-inner {
+    max-width: 542px;
+}
+
+.hero__title--center {
+    text-align: center;
+    display: block;
+}
+
+.hero__title--right {
+    text-align: right;
+    display: block;
+}
+
+.hero__description {
+    margin: 24px 0 40px 0;
+    line-height: 130%;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-buttons__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-button-primary);
+    width: 100%;
+    max-width: 263px;
+    height: 72px;
+    border-radius: 66px;
+    font-weight: 500;
+    padding: 0 49px;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 130%;
+    transition: .3s;
+}
+
+.hero-buttons__item:hover {
+    background-color: var(--color-button-primary);
+    color: #fff;
+}
+
+.hero-buttons__item--dark {
+    background-color: var(--color-button-primary);
+    color: #fff;
+}
+
+.hero-buttons__item--dark:hover {
+    background-color: var(--color-button-secondary);
+    border: 2px solid var(--color-button-secondary);
+    color: var(--color-button-primary);
+}
+/* ------------------- Hero styles end ------------------- */
+
+/* ------------------- Running line styles start ------------------- */
+.running-line {
+    display: flex;
+    gap: 30px;
+    padding: 18px 0;
+    background-color: var(--color-text-accent);
+}
+
+.running-line__item {
+    font-family: var(--ff-merriweather);
+    font-size: 2.2rem;
+    color: #fff;
+    line-height: 110%;
+    flex-shrink: 0;
+}
+/* ------------------- Running line styles end ------------------- */
+
+/* -------------------  styles start ------------------- */
+/* -------------------  styles end ------------------- */
+
+/* -------------------  styles start ------------------- */
+/* -------------------  styles end ------------------- */
+
+/* -------------------  styles start ------------------- */
+/* -------------------  styles end ------------------- */
+
+/* -------------------  styles start ------------------- */
+/* -------------------  styles end ------------------- */
+
+/* -------------------  styles start ------------------- */
+/* -------------------  styles end ------------------- */

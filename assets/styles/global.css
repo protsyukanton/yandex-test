@@ -5,14 +5,19 @@
     --ff-merriweather: "Merriweather", serif;
 
     /* color */
-    --color-accent: #BF5DFF;
-    --color-dark: #000;
-    --color-light: #fff;
-
+    --color-text-primary: #313131;
+    --color-text-accent: #F54932;
+    --color-text-note: #3057A2;
+    --color-button-primary: #1F1F1F;
+    --color-button-secondary: #FBCE51;
+}
+html {
+    font-size: 10px;
 }
 
 body {
     font-family: var(--ff-golos);
+    color: var(--color-text-primary);
 }
 
 .container {
@@ -26,7 +31,7 @@ body {
     font-family: var(--ff-merriweather);
     color: #313131;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 6rem;
     line-height: 110%;
     text-transform: uppercase;
 }
