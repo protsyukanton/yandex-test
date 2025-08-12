@@ -26,6 +26,7 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
 /* ------------------- Header styles end ------------------- */
 
 /* ------------------- Hero styles start ------------------- */
@@ -93,6 +94,7 @@
     border: 2px solid var(--color-button-secondary);
     color: var(--color-button-primary);
 }
+
 /* ------------------- Hero styles end ------------------- */
 
 /* ------------------- Running line styles start ------------------- */
@@ -110,6 +112,7 @@
     line-height: 110%;
     flex-shrink: 0;
 }
+
 /* ------------------- Running line styles end ------------------- */
 .tournament {
     padding: 100px 0;
@@ -179,10 +182,90 @@
     font-size: 2rem;
     color: var(--color-text-note);
 }
+
 /* ------------------- Tournament styles start ------------------- */
 /* ------------------- Tournament styles end ------------------- */
 
 /* -------------------  styles start ------------------- */
+.stage {
+    padding: 100px 0;
+}
+
+.stage .container {
+    position: relative;
+}
+
+.stage__image {
+    position: absolute;
+    right: -40px;
+    bottom: 0;
+    width: 100%;
+    max-width: 376px;
+}
+
+.stage-header {
+    position: relative;
+    margin-bottom: 54px;
+}
+
+.stage-header__subtitle {
+    position: absolute;
+    bottom: 10px;
+    left: 320px;
+    font-size: 2rem;
+    line-height: 120%;
+    color: var(--color-text-note);
+}
+
+.stage-cards {
+    counter-reset: stage-counter;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stage-cards__item {
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 120%;
+    background: url('../images/stage/stage-item-bg-light.png') no-repeat center center / cover;
+}
+
+.stage-cards__item::before {
+    content: counter(stage-counter);
+    counter-increment: stage-counter;
+    width: 36px;
+    height: 36px;
+    color: var(--color-text-primary);
+    background-color: #fff;
+    border-radius: 100px;
+    font-family: var(--ff-golos);
+    font-size: 2rem;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stage-cards__item:nth-child(3) {
+    grid-row-end: span 2;
+    background: url('../images/stage/stage-item-bg-light--big.png') no-repeat center center / cover;
+}
+
+.stage-cards__item:nth-child(6) {
+    background: url('../images/stage/stage-item-bg-dark.png') no-repeat center center / cover;
+}
+
+.stage-cards__item:nth-child(7) {
+    grid-column-end: span 2;
+    background: url('../images/stage/stage-item-bg-dark--long.png') no-repeat center center / cover;
+    padding-right: 310px;
+}
+
 /* -------------------  styles end ------------------- */
 
 /* -------------------  styles start ------------------- */
